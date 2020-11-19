@@ -29,10 +29,10 @@ API-приложение (на основе Django Rest Framework) формир�
 * при необходимости, создать суперпользователя
 
 ```
-git clone https://github.com/Fr33vvay/api_yamdb
-cd api_yamdb/
+git clone https://github.com/Fr33vvay/yamdb_final
+cd yamdb_final/
 docker-compose up
-docker exec -it api_yamdb_web_1 bash
+docker exec -it yamdb_final_web_1 bash
 python manage.py migrate
 python manage.py collectstatic
 python manage.py loaddata fixtures.json
