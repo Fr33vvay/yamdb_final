@@ -1,4 +1,4 @@
-name: YAMDB
+name: yamdb_workflow
 
 on: [push]
 
@@ -43,7 +43,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: fr33vvay/api_yamdb_web:latest
+          tags: fr33vvay/yamdb:latest
 
   deploy:
     runs-on: ubuntu-latest
@@ -57,7 +57,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            sudo docker pull fr33vvay/api_yamdb_web
+            sudo docker pull fr33vvay/yamdb:latest
             sudo docker-compose down -v
             sudo docker-compose up -d --build
 
