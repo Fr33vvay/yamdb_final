@@ -59,6 +59,6 @@ python manage.py createsuperuser
 
 *2020 год, когорта 4*
 
-## Статус workflow
+### Статус workflow
 
 ![yamdb_workflow](https://github.com/Fr33vvay/yamdb_final/workfows/.github/workflows/yamdb_workflow.yaml/badge.svg)
