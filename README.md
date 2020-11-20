@@ -61,3 +61,4 @@ python manage.py createsuperuser
 
 ### Статус workflow
 
+![yamdb_workflow](https://github.com/Fr33vvay/yamdb_final/workfows/yamdb_workflow/badge.svg)
