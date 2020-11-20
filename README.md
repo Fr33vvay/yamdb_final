@@ -58,3 +58,7 @@ python manage.py createsuperuser
 * [Влад Бармичев](https://github.com/Shindler7 "github")
 
 *2020 год, когорта 4*
+
+## Статус workflow
+
+![yamdb_workflow](https://github.com/Fr33vvay/yamdb_final/workfows/yamdb_workflow/badge.svg)
