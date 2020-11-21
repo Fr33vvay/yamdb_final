@@ -32,14 +32,14 @@ API-приложение (на основе Django Rest Framework) формир�
 git clone https://github.com/Fr33vvay/yamdb_final
 cd yamdb_final/
 docker-compose up
-docker exec -it yamdb_final_web_1 bash
+docker exec -it django
 python manage.py migrate
 python manage.py collectstatic
 python manage.py loaddata fixtures.json
 python manage.py createsuperuser
 ```
 
-Для проверки работы откройте в своем браузере: [localhost:8000/api/v1/](http://localhost/api/v1)
+Для проверки работы откройте в своем браузере: [localhost/api/v1/](http://localhost/api/v1)
 
 ## Пример настроек окружения
 
