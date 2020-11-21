@@ -39,7 +39,7 @@ python manage.py loaddata fixtures.json
 python manage.py createsuperuser
 ```
 
-Для проверки работы откройте в своем браузере: [localhost/api/v1/](http://localhost/api/v1)
+Для проверки работы откройте в своем браузере: [localhost:8000/api/v1/](http://localhost/api/v1)
 
 ## Пример настроек окружения
 
