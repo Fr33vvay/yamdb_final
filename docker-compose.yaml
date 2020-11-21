@@ -13,13 +13,11 @@ services:
     env_file:
       - ./.env
   web:
-    image: fr33vvay/yamdb:v2
+    image: fr33vvay/yamdb:latest
     container_name: django
     restart: always
     volumes:
       - static_volume:/code/static
-    ports:
-      - 8000:8000
     depends_on:
       - db
     env_file:
@@ -35,15 +33,3 @@ services:
       - 80:80
     depends_on:
       - web
-
-#  nginx:
-#    build:
-#      context: .
-##      dockerfile: Dockerfile_nginx
-#    volumes:
-#      - static_volume:/code/static
-#    ports:
-#      - 80:80
-#    depends_on:
-#      - web
-
