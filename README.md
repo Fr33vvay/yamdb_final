@@ -1,3 +1,7 @@
+### Статус workflow
+
+![yamdb_workflow](https://github.com/Fr33vvay/yamdb_final/workflows/yamdb_workflow/badge.svg)
+
 # YaMDb. Произведения и отзывы.
 
 API-приложение (на основе Django Rest Framework) формирует базу произведений, разделённых на различные категории, 
@@ -32,7 +36,7 @@ API-приложение (на основе Django Rest Framework) формир�
 git clone https://github.com/Fr33vvay/yamdb_final
 cd yamdb_final/
 docker-compose up
-docker exec -it django
+docker exec -it django bash
 python manage.py migrate
 python manage.py collectstatic
 python manage.py loaddata fixtures.json
@@ -58,7 +62,3 @@ python manage.py createsuperuser
 * [Влад Бармичев](https://github.com/Shindler7 "github")
 
 *2020 год, когорта 4*
-
-### Статус workflow
-
-![yamdb_workflow](https://github.com/Fr33vvay/yamdb_final/workflows/yamdb_workflow/badge.svg)
