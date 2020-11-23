@@ -61,7 +61,7 @@ jobs:
           port: ${{ secrets.PORT }}
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
-          source: "docker-compose.yaml"
+          source: "docker-compose.yaml, nginx.nginx.conf"
           target: "/home/freeway/yamdb"
 
   deploy:
@@ -78,6 +78,7 @@ jobs:
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             sudo cd yamdb
+            sudo mv nginx.conf nginx
             sudo docker pull fr33vvay/yamdb:latest
             sudo docker-compose up --force-recreate --no-deps -d web
             sudo docker image prune -f
