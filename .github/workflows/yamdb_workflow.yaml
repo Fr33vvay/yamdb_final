@@ -62,8 +62,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
 #          source: "docker-compose.yaml, nginx/nginx.conf, .env"
-          source: "nginx/nginx.conf"
-          target: "/home/freeway/yamdb"
+          source: 'nginx/nginx.conf'
+          target: '/home/freeway/yamdb'
 
   deploy:
     runs-on: ubuntu-latest
