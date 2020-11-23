@@ -73,7 +73,7 @@ jobs:
           script: |
             sudo cd yamdb
             sudo docker pull fr33vvay/yamdb:latest
-            sudo docker-compose up --build --force-recreate --no-deps -d web
+            sudo docker-compose up --force-recreate --no-deps -d web
             sudo docker image prune -f
 
   send_message:
